@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Helvetica, sans-serif;
+}
+/*------------------------Navbar start-------------------*/
+#navbar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+    border-bottom: 3px solid #f3f3f4;
+    background: #fff;
+    z-index: 1;
+}
+#navbar .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar .logo .img{
+    margin-right: 20px;
+    transition: 0.1s linear;
+}
+#navbar .logo .img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+#navbar .logo .name h1{
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 5px;
+    transition: 0.1s linear;
+}
+#navbar .logo .name h1:hover{
+    opacity: 0.2;
+}
+#navbar .logo .name p a{
+    font-size: 0.9rem;
+    color: #ea7398;
+}
+.image img{
+    width: 90px;
+    height: 70px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.active{
+    border: 2px solid #ea7398;
+}
+/*------------------------Navbar end-------------------*/
+
+/*------------------------Header start-------------------*/
+#header{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 140px;
+}
+#header img{
+    width: 100%;
+    border-radius: 10px;
+}
+/*------------------------Header end-------------------*/
+
+/*------------------------Footer start-------------------*/
+#footer{
+    width: 90%;
+    height: 120px;
+    margin: 0 auto;
+}
+#footer .img{
+    width: 130px;
+    height: 30px;
+    float: left;
+    margin-right: 15px;
+}
+#footer .img img{
+    width: 100%;
+}
+#footer .content{
+    width: 50%;
+    float: left;
+}
+#footer .content p a{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #9e9ea7;
+}
+#footer .content p a:hover{
+    opacity: 0.4;
+}
+#footer .content a{
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ebe2de;
+    margin: 8px 0;
+}
+/*------------------------Footer end-------------------*/
+
+
+/*------------------------Media query-------------------*/
+
+@media (max-width: 992px){
+    #navbar .logo .img{
+       display: none;
+    }
+    #navbar .logo .name h1{
+        font-size: 1rem;
+    }
+    .image img{
+        width: 68px;
+        height: 50px;
+    }
+}
+@media (max-width: 576px){
+    #navbar .logo{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #footer .content{
+        width: 35%;
+    }
+}
